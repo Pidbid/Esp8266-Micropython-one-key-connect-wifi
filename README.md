@@ -16,3 +16,6 @@
 > 使用设备创建AP并启动UDP服务，在连接设备信号后，使用UDP进行数据传输，完成配网
 ## 写这个小功能的初衷是什么？
 Arduino有的我希望Mpy也要有，不然怎么Py呢？
+## 国内介绍地址：
+(歪克士WICOS)[https://www.wicos.me/yingjian/868.html]
+
