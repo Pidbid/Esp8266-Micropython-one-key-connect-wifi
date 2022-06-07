@@ -10,6 +10,7 @@ MicroPython 一键配网
 > con = mpyconnect()  
 > con.connect()  
 - 使用微信扫描图片qrcode.jpg的小小程序码
+![image](https://github.com/Pidbid/Esp8266-Micropython-one-key-connect-wifi/blob/master/qrcode.jpg)
 - 点击小程序内“连接热点”按钮自动连接热点，若弹出“WiFi权限申请”请点击同意
 - 将目的WIFI的账号和密码分别填写完整
 - 点击“开始配网”即可开始配网
