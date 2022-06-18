@@ -1,0 +1,17 @@
+
+.button.data-v-fbe2c206{
+	background: rgba(0, 0, 0, 0);
+	border: 0px solid rgba(0, 0, 0, 0);
+	padding: 0px;
+}
+.button.data-v-fbe2c206::after{
+	background: rgba(0, 0, 0, 0);
+	border: 0px solid rgba(0, 0, 0, 0);
+}
+.buttonHover.data-v-fbe2c206{
+	background: rgba(0, 0, 0, 0);
+}
+.bhover.data-v-fbe2c206{
+	opacity: 0.7;
+}
+

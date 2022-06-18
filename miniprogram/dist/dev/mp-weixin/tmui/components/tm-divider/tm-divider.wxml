@@ -1,0 +1,1 @@
+<view><view wx:if="{{a}}" style="{{b + ';' + c}}" class="{{[d]}}"></view><view wx:if="{{e}}" class="flex flex-row flex-center"><view style="{{f}}" class="{{[g, h, i, j]}}"></view><view class="{{[l]}}"><tm-text wx:if="{{k}}" u-i="a7789db0-0" bind:__l="__l" u-p="{{k}}"></tm-text></view><view style="{{m}}" class="{{[n, o, p, q]}}"></view></view></view>

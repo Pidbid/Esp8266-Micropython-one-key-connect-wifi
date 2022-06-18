@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "tm-sheet": "../tm-sheet/tm-sheet",
+    "tm-text": "../tm-text/tm-text",
+    "tm-divider": "../tm-divider/tm-divider"
+  }
+}

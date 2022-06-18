@@ -1,0 +1,23 @@
+
+.spin.data-v-513b896a {
+	transform-origin: 50% 50%;
+	-webkit-animation: xhRote-513b896a 1.2s infinite linear;
+	        animation: xhRote-513b896a 1.2s infinite linear;
+}
+@-webkit-keyframes xhRote-513b896a {
+0% {
+		transform: rotate(0deg);
+}
+100% {
+		transform: rotate(360deg);
+}
+}
+@keyframes xhRote-513b896a {
+0% {
+		transform: rotate(0deg);
+}
+100% {
+		transform: rotate(360deg);
+}
+}
+

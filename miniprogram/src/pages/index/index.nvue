@@ -1,0 +1,81 @@
+<template>
+	<tm-app ref="app">
+		<tm-sheet darkBgColor="#050505" :margin="[0, 0]">
+			<view class="flex-row flex-row-center-start pb-10">
+				<tm-image :width="108" :height="67.5" :src="logoimg"></tm-image>
+				<view class="pl-16">
+					<tm-text _class="text-weight-b" :font-size="36" label="Mpy一键配网"></tm-text>
+					<tm-text color="grey" label="使用 Micropython 实现的Esp8266/32配网"></tm-text>
+				</view>
+			</view>
+		</tm-sheet>
+		<tm-sheet :text="true" color="blue">
+			请确保您已连接您的Mpy设备（如：ESP8266/ESP32）的AP后，进行如下操作
+		</tm-sheet>
+		<tm-sheet :round="3" :margin="[15, 15]">
+			<tm-form>
+				<tm-form-item label="设备ip">
+					<tm-input v-model="formData.ip"></tm-input>
+				</tm-form-item>
+				<tm-form-item label="设备端口">
+					<tm-input v-model="formData.port" type="number"></tm-input>
+				</tm-form-item>
+				<tm-form-item label="WIFI名">
+					<tm-input type="text" v-model="formData.ssid" placeholder="WIFI SSID"></tm-input>
+				</tm-form-item>
+				<tm-form-item label="密码">
+					<tm-input type="text" v-model="formData.password" placeholder="WIFI密码" :password="true"></tm-input>
+				</tm-form-item>
+				<tm-form-item>
+					<tm-button color="green" size="large" :block="true" @click="startConnect">开始配网</tm-button>
+				</tm-form-item>
+			</tm-form>
+		</tm-sheet>
+
+		<tm-sheet :round="3" :margin="[15, 15]">
+			<tm-collapse>
+				<tm-collapse-item name="0" title="项目介绍">
+					项目地址：https://github.com/Pidbid/Esp8266-Micropython-one-key-connect-wifi
+				</tm-collapse-item>
+				<tm-collapse-item name="1" title="如何使用？">
+					1,下载本仓库至本地<br />
+					2,将本仓库内mpycon.py文件上传到设备<br />
+					3,将设备上电，通常VCC使用5V或3.3V<br />
+					4,使用微信扫描图片qrcode.jpg的小小程序码<br />
+					5,点击小程序内“连接热点”按钮自动连接热点，若弹出“WiFi权限申请”请点击同意<br />
+					6,将目的WIFI的账号和密码分别填写完整<br />
+					7,点击“开始配网”即可开始配网<br />
+					8,等待配网阶段蓝色LED灯会长亮，连接肿LED会闪亮，配网完成配网会熄灭<br />
+					9,至此，配网完成
+				</tm-collapse-item>
+			</tm-collapse>
+		</tm-sheet>
+		<view class="py-32 mx-32">
+			<tm-divider color="grey-2" label="Mpy配网-Wicos项目"></tm-divider>
+		</view>
+		<tm-message ref="message"></tm-message>
+	</tm-app>
+</template>
+<script lang="ts" setup>
+import { ref, getCurrentInstance } from "vue"
+import { onShow, onLoad } from "@dcloudio/uni-app";
+import logoimg from "@/static/logo.png"
+const { proxy } = getCurrentInstance();
+const formData = { ip: "192.168.4.1", ssid: "", password: "", port: 7788 }
+
+const startConnect = () => {
+	if (formData.ssid === "" || formData.password === "") {
+		proxy.$refs.message.show({ text: "数据不完整", model: "error" })
+		return 0
+	} else {
+		const udps = wx.createUDPSocket()
+		udps.bind()
+		udps.send({
+			address: formData.ip,
+			port: formData.port,
+			message: JSON.stringify({ login: "yes", ssid: formData.ssid, password: formData.password })
+		})
+		proxy.$refs.message.show({ text: "配网中", model: "primary" })
+	}
+}
+</script>

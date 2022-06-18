@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "tm-text": "../tm-text/tm-text"
+  }
+}

@@ -1,0 +1,39 @@
+
+.fade.data-v-155cc8af {
+		opacity: 0;
+}
+.fade-reverse.data-v-155cc8af {
+		opacity: 1;
+}
+.up.data-v-155cc8af {
+		transform: translateY(0%);
+}
+.up-reverse.data-v-155cc8af {
+		transform: translateY(-101%);
+}
+.down.data-v-155cc8af {
+		transform: translateY(0%);
+}
+.down-reverse.data-v-155cc8af {
+		transform: translateY(101%);
+}
+.left.data-v-155cc8af {
+		transform: translateX(0%);
+}
+.left-reverse.data-v-155cc8af {
+		transform: translateX(-101%);
+}
+.right.data-v-155cc8af {
+		transform: translateX(0%);
+}
+.right-reverse.data-v-155cc8af {
+		transform: translateX(101%);
+}
+.zoom.data-v-155cc8af {
+		transform: scale(0, 0);
+		opacity: 0;
+}
+.zoom-reverse.data-v-155cc8af {
+		transform: scale(1, 1);
+		opacity: 1;
+}

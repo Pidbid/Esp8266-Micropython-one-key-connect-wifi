@@ -1,0 +1,1 @@
+<view class="flex flex-row flex-row-center-center data-v-513b896a" style="{{q}}"><text wx:if="{{a}}" bindtap="{{b}}" class="{{['data-v-513b896a', c, 'text-size-n d-inline-block', 'tmicon ', d, e, f]}}" style="{{g + ';' + h + ';' + i}}"></text><image wx:if="{{j}}" bindtap="{{k}}" ref="icon" src="{{l}}" class="{{['data-v-513b896a', m, n]}}" style="{{o + ';' + p}}"></image></view>

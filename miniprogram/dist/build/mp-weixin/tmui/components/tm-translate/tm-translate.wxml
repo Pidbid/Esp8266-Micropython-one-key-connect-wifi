@@ -1,0 +1,1 @@
+<view ref="bodywk" bindtap="{{e}}" class="{{['data-v-dcc93ba2', f, 'overflow']}}" style="{{g + ';' + h + ';' + i}}"><view wx:if="{{a}}" ref="nvueElAni" animation="{{b}}" class="{{['data-v-dcc93ba2', 'flex-col flex', c, d]}}"><slot></slot></view></view>

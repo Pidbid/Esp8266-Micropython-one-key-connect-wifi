@@ -1,0 +1,17 @@
+{
+  "navigationBarTitleText": "TMUI",
+  "usingComponents": {
+    "tm-image": "../../tmui/components/tm-image/tm-image",
+    "tm-text": "../../tmui/components/tm-text/tm-text",
+    "tm-sheet": "../../tmui/components/tm-sheet/tm-sheet",
+    "tm-input": "../../tmui/components/tm-input/tm-input",
+    "tm-form-item": "../../tmui/components/tm-form-item/tm-form-item",
+    "tm-button": "../../tmui/components/tm-button/tm-button",
+    "tm-form": "../../tmui/components/tm-form/tm-form",
+    "tm-collapse-item": "../../tmui/components/tm-collapse-item/tm-collapse-item",
+    "tm-collapse": "../../tmui/components/tm-collapse/tm-collapse",
+    "tm-divider": "../../tmui/components/tm-divider/tm-divider",
+    "tm-message": "../../tmui/components/tm-message/tm-message",
+    "tm-app": "../../tmui/components/tm-app/tm-app"
+  }
+}

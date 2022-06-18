@@ -1,0 +1,1 @@
+.spin.data-v-7f3fe6a1{transform-origin:50% 50%;-webkit-animation:xhRote-7f3fe6a1 1.2s infinite linear;animation:xhRote-7f3fe6a1 1.2s infinite linear}@-webkit-keyframes xhRote-7f3fe6a1{0%{transform:rotate(0)}to{transform:rotate(360deg)}}@keyframes xhRote-7f3fe6a1{0%{transform:rotate(0)}to{transform:rotate(360deg)}}

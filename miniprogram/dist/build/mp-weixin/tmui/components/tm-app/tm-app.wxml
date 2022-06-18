@@ -1,0 +1,1 @@
+<view class="flex flex-col relative" style="{{d + ';' + e}}"><view class="{{['flex', 'flex-col', 'flex-1', a]}}" style="{{b + ';' + c}}"><slot></slot></view></view>

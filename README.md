@@ -22,5 +22,22 @@ MicroPython 一键配网
 Arduino有的我希望Mpy也要有，不然怎么Py呢？
 ## 和之前的版本有什么改变？
 首先将配网功能模块化处理，并且将配置文件单独放置在一个文件夹内，与其它文件互不影响  
+
+# 小程序如何使用
+
+我采用uniapp + tmui 的开发方式，代码在miniprogram 目录内，总体来说没什么技术含量，主要是微信提供的udp服务
+
+```
+const udps = wx.createUDPSocket()
+		udps.bind()
+		udps.send({
+			address: formData.ip,
+			port: formData.port,
+			message: JSON.stringify({ login: "yes", ssid: formData.ssid, password: formData.password })
+		})
+```
+
+> 我个人很推荐(tmui)[https://tmui.design]是一位大佬写的uniapp的UI框架，目前已经到3.0版本了，很值得使用，主要是颜值很高
+
 ## 国内介绍地址：
 (歪克士WICOS)[https://www.wicos.me/yingjian/868.html]
