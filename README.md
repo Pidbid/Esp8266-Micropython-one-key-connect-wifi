@@ -37,7 +37,7 @@ const udps = wx.createUDPSocket()
 		})
 ```
 
-> 我个人很推荐(tmui)[https://tmui.design]是一位大佬写的uniapp的UI框架，目前已经到3.0版本了，很值得使用，主要是颜值很高
+> 我个人很推荐(tmui)[https://tmui.design] 是一位大佬写的uniapp的UI框架，目前已经到3.0版本了，很值得使用，主要是颜值很高
 
 ## 国内介绍地址：
 (歪克士WICOS)[https://www.wicos.me/yingjian/868.html]
